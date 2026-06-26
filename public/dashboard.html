@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - SmartNotes Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="dashboard.html" class="brand">
+        <div class="brand-icon">✦</div>
+        <span>SmartNotes</span>
+      </a>
+      <div class="nav-links">
+        <span class="user-greeting" id="user-greeting">Loading user...</span>
+        <a href="#" class="btn btn-secondary" id="logout-btn" style="padding: 6px 12px; font-size: 0.85rem;">Log Out</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container" style="flex: 1; padding-bottom: 40px;">
+    <div class="dashboard-header">
+      <div class="dashboard-title">
+        <h2>Your Summaries</h2>
+        <p>A central hub for all your summarized documents and notes</p>
+      </div>
+      <a href="new-note.html" class="btn btn-accent">
+        ✦ New Note
+      </a>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" class="form-control search-input" placeholder="Search notes by title or content...">
+      </div>
+    </div>
+
+    <!-- Notes Grid Container -->
+    <div class="notes-grid" id="notes-grid">
+      <!-- Loaded dynamically via script.js -->
+      <div style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+        <div class="spinner" style="margin: 0 auto 20px;"></div>
+        <p style="color: var(--text-muted);">Loading your notes...</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
