@@ -1,6 +1,6 @@
 // SmartNotes Summarizer - Frontend Script
 
-const API_BASE = '/api';
+const API_BASE = "https://smart-notes-1-d1pa.onrender.com/api";
 
 // --- Auth State Management ---
 const getToken = () => localStorage.getItem('token');
