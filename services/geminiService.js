@@ -32,12 +32,11 @@ const summarizeText = async (text) => {
     }
 
     const model = aiClient.getGenerativeModel({
-      model: 'gemini-1.5-flash',
-      // Request JSON output from the model
-      generationConfig: {
-        responseMimeType: 'application/json'
-      }
-    });
+  model: "gemini-2.5-flash",
+  generationConfig: {
+    responseMimeType: "application/json"
+  }
+});
 
     const prompt = `
 You are a text summarization assistant. Analyze the text provided below.
